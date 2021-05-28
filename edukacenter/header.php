@@ -22,38 +22,67 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'edukacenter' ); ?></a>
+<div class="container-fluid">
+    <div class="content">
+        <header class="header">
+            <img class="header__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="edukacenter-logo" />
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$edukacenter_description = get_bloginfo( 'description', 'display' );
-			if ( $edukacenter_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $edukacenter_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+            <menu class="header__menu">
+                <ul class="header__menu__list">
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="#">
+                            Strona główna
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="#">
+                            Wybierz kurs
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="#">
+                            Certyfikaty
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="https://facebook.com">
+                            <img class="header__menu__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/facebook.svg'; ?>" alt="facebook" />
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="https://instagram.com">
+                            <img class="header__menu__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/instagram.svg'; ?>" alt="instagram" />
+                        </a>
+                    </li>
+                </ul>
+            </menu>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'edukacenter' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+            <!-- MOBILE -->
+            <button class="hamburgerBtn" onclick="openMobileMenu()">
+                <img class="hamburgerBtn__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/hamburger.png'; ?>" alt="menu" />
+            </button>
+            <menu class="mobileMenu">
+                <button class="mobileMenu__closeBtn" onclick="closeMobileMenu()">
+                    <img class="mobileMenu__closeBtn__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/close.png'; ?>" alt="wyjdz" />
+                </button>
+
+                <img class="mobileMenu__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="edukacenter" />
+
+                <ul class="mobileMenu__list">
+                    <li class="mobileMenu__list__item">Strona główna</li>
+                    <li class="mobileMenu__list__item">Wybierz kurs</li>
+                    <li class="mobileMenu__list__item">Certyfikaty</li>
+                </ul>
+
+                <div class="mobileMenu__socialMedia">
+                    <a href="https://facebook.com">
+                        <img class="mobileMenu__socialMedia__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/facebook.svg'; ?>" alt="facebook" />
+                    </a>
+                    <a href="https://instagram.com">
+                        <img class="mobileMenu__socialMedia__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/instagram.svg'; ?>" alt="instagram" />
+                    </a>
+                </div>
+            </menu>
+
+            <!-- END MOBILE -->
+        </header>

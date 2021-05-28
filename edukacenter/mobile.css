@@ -1,0 +1,260 @@
+@media(max-width: 1400px) {
+    .certs__imgWrapper:first-of-type {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    .landing__content__header {
+        font-size: 24px;
+    }
+
+    .landing__content__subheader, .button--cta {
+        font-size: 17px;
+    }
+
+    .button--cta {
+        height: 60px;
+        border-radius: 60px;
+        padding: 0 50px;
+    }
+
+    .newsletterSection {
+        margin-top: 70px;
+    }
+
+    .footer__header {
+        font-size: 17px;
+    }
+
+    .footer__list__item {
+        font-size: 14px;
+    }
+
+    .footer__socialMedia__img {
+        width: 40px;
+    }
+
+    .footer__form {
+        width: 320px;
+    }
+
+    .testimonialsSection .wp-facebook-reviews {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .testimonialsSection .wp-facebook-review {
+        width: 45% !important;
+        margin-top: 30px !important;
+    }
+
+    .testimonialsSection .wp-facebook-review:not(:last-child) {
+        margin-right: 0 !important;
+    }
+}
+
+@media(max-width: 992px) {
+    .certs__header {
+        font-size: 20px;
+    }
+
+    .certsSection {
+        padding: 20px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .hamburgerBtn {
+        display: block;
+        background: transparent;
+        width: 50px;
+        height: auto;
+    }
+
+    .mobileMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #F6F6F6;
+        width: 0;
+        height: 100vh;
+        z-index: 10;
+        transition: .4s all;
+    }
+
+    .mobileMenu > * {
+        opacity: 0;
+        transition: .4s all;
+    }
+
+    .mobileMenu__list {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .mobileMenu__list__item {
+        margin-bottom: 25px;
+        color: #151726;
+        font-weight: 900;
+    }
+
+    .mobileMenu__closeBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: auto;
+        background: transparent;
+    }
+
+    .mobileMenu__socialMedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .mobileMenu__socialMedia a:first-of-type {
+        margin-right: 40px;
+    }
+
+    .mobileMenu__socialMedia__img {
+        width: 50px;
+        height: auto;
+    }
+
+    .mobileMenu__closeBtn__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hamburgerBtn__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__header, .footer__list__item, .footer__data h5 {
+        text-align: center;
+    }
+
+    .footer__col {
+        margin-top: 40px;
+        margin-right: 0 !important;
+    }
+
+    .footer__socialMedia {
+        justify-content: center;
+    }
+
+    .footer__socialMedia__link {
+        margin: 0;
+    }
+
+    .footer__socialMedia__link:first-of-type {
+        margin-right: 50px;
+    }
+
+    .footer__list__item--contact {
+        justify-content: center;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer__data {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header__logo {
+        width: 50px;
+        height: auto;
+    }
+
+    .hamburgerBtn {
+        width: 30px;
+    }
+
+    .landing {
+        margin-top: 20px;
+    }
+
+    .button--desktop {
+        display: none;
+    }
+
+    .button--mobile {
+        display: block;
+        margin: 40px auto;
+        border: none;
+    }
+
+    .newsletter__header, .partners__header, .testimonials__header {
+        font-size: 24px;
+    }
+
+    .certsSection {
+        flex-direction: column;
+    }
+
+    .certs__content {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .certs__text {
+        text-align: center;
+    }
+
+    .testimonialsSection {
+        padding: 30px 20px;
+    }
+
+    .testimonials__subheader {
+        margin-bottom: 0;
+    }
+
+    .testimonialsSection .wp-facebook-review {
+        width: 100% !important;
+    }
+}
+
+@media(max-width: 576px) {
+    .certsSection {
+        padding: 30px 10px;
+    }
+
+    .display-md {
+        display: none;
+    }
+
+    .display-xs {
+        display: block;
+        color: #151726;
+        max-width: 300px;
+        margin: 40px auto 10px;
+    }
+
+    .button--testimonials {
+        width: 240px;
+    }
+}

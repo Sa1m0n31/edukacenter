@@ -1,57 +1,91 @@
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package edukacenter
- */
-
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+    <main class="landing">
+        <img class="landing__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/hero-image.png'; ?>" alt="eduka-center" />
+        <div class="landing__content">
+            <h1 class="landing__content__header">
+                Platforma online
+            </h1>
+            <h2 class="landing__content__subheader display-md">
+                Edukacja dzieci 1-6 lat dla rodziców, opiekunów i nauczycieli
+            </h2>
+            <button class="button button--cta button--desktop">
+                Zobacz kursy i materiały
+            </button>
+        </div>
+    </main>
 
-		<?php
-		if ( have_posts() ) :
+    <h2 class="landing__content__subheader display-xs">
+        Edukacja dzieci 1-6 lat dla rodziców, opiekunów i nauczycieli
+    </h2>
+    <button class="button button--cta button--mobile">
+        Zobacz kursy i materiały
+    </button>
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+    <section class="newsletterSection">
+        <h2 class="newsletter__header">
+            Zapisz się do naszego newslettera
+        </h2>
+        <p class="newsletter__text">
+            Otrzymuj na bieżąco informacje o nowościach, rabatach oraz informacje o bezpłatnych materiałach.
+        </p>
+        <button class="button button--newsletter">
+            Chcę się zapisać!
+        </button>
+    </section>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+    <section class="certsSection">
+        <div class="certs__imgWrapper">
+            <img class="certs__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/certyfikat.png'; ?>" alt="certyfikaty" />
+        </div>
+        <div class="certs__imgWrapper">
+            <img class="certs__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/certyfikat.png'; ?>" alt="certyfikaty" />
+        </div>
+        <div class="certs__content">
+            <h3 class="certs__header">
+                Zaświadczenia z kursu
+            </h3>
+            <p class="certs__text">
+                U nas z każdego kursu wygenerujesz sobie zaświadczenie na druku MEN. Jesteśmy Placówką Kształcenia Ustawicznego oraz Instytucją Szkoleniową, posiadamy ważne wpisy.
+            </p>
+            <p class="certs__text">
+                *zapoznaj się z zasadami zaświadczeń w formie papierowej. Formę elektroniczną dostajesz na maila zaraz po przerobieniu kursu, więcej w zakładce CERTYFIKATY
+            </p>
+            <button class="button button--certs">
+                Poczytaj więcej o nas
+            </button>
+        </div>
+    </section>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+    <section class="testimonialsSection">
+        <h2 class="testimonials__header">
+            Opinie o nas
+        </h2>
+        <h2 class="testimonials__subheader">
+            Sprawdź wszystkie nasze realne opinie w rekomendacjach na <b>Facebooku</b>!
+        </h2>
 
-			endwhile;
+        <?php echo do_shortcode('[fbrev page_name="Skylo.pl - Agencja Interaktywna" page_id="107515137810946" page_access_token="EAAVVPjFKgSEBADqty1lneo0dt4bbfZA8q8iSNkv6KhmxJJXqUDZBSMNMtYt6I9J3lsb0HLFYhNZBHTPbXZAxrlj4CvQiwEc34V33CxFn15xr1lACYIOfOYWND6EZBbwtkeFcjr5job0TWtjqjqzg25ZAVnE3ymZCvPKU2Pr5p12rftMJghBo6rD" pagination="7" text_size="120" hide_based_on=true centered=true dark_theme=true lazy_load_img=true show_success_api=true open_link=true nofollow_link=true api_ratings_limit="500"]'); ?>
 
-			the_posts_navigation();
+        <button class="button--testimonials">
+            Zobacz wszystkie opinie
+        </button>
+    </section>
 
-		else :
+    <section class="partnersSection">
+        <h2 class="partners__header">
+            Nasi partnerzy
+        </h2>
 
-			get_template_part( 'template-parts/content', 'none' );
+        <img class="partners__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/partner.png'; ?>" alt="partner" />
 
-		endif;
-		?>
-
-	</main><!-- #main -->
+        <h3 class="partners__caption">
+            <b>Kursy na Opiekuna do Żłobka</b> z Decyzją Ministerstwa
+        </h3>
+    </section>
 
 <?php
-get_sidebar();
 get_footer();
+?>
