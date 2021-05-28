@@ -97,11 +97,11 @@
         </div>
 
         <div class="footer__data">
-            <h5>EDUKA CENTER Michałkowicka 28</h5>
+            <h5><b>EDUKA CENTER</b> Michałkowicka 28</h5>
             <h5>41-100 Siemianowice Śląskie</h5>
-            <h5>NIP 6272555867</h5>
-            <h5>REGON 241073311</h5>
-            <h5>BNP Paribas: 04 1750 0012 0000 0000 3221 0821</h5>
+            <h5><b>NIP</b> 6272555867</h5>
+            <h5><b>REGON</b> 241073311</h5>
+            <h5><b>BNP Paribas</b>: 04 1750 0012 0000 0000 3221 0821</h5>
         </div>
     </div>
 </footer>

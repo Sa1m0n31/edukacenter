@@ -203,6 +203,20 @@
         display: block;
         margin: 40px auto;
         border: none;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+
+    .button--newsletter, .button--certs, .button--testimonials {
+        height: 50px;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+
+    .button--newsletter, .button--certs {
+        padding: 0 20px;
+        white-space: nowrap;
     }
 
     .newsletter__header, .partners__header, .testimonials__header {
@@ -236,6 +250,14 @@
     .testimonialsSection .wp-facebook-review {
         width: 100% !important;
     }
+
+    .footer__data h5 {
+        font-size: 13px;
+    }
+
+    .afterFooter h6 {
+        font-size: 12px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -255,6 +277,6 @@
     }
 
     .button--testimonials {
-        width: 240px;
+        width: 280px;
     }
 }
