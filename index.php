@@ -12,7 +12,9 @@ get_header();
                 Edukacja dzieci 1-6 lat dla rodziców, opiekunów i nauczycieli
             </h2>
             <button class="button button--cta button--desktop">
-                Zobacz kursy i materiały
+                <a class="button--link" href="https://kursy.edukacenter.pl/">
+                    Zobacz kursy i materiały
+                </a>
             </button>
         </div>
     </main>
@@ -54,7 +56,9 @@ get_header();
                 *zapoznaj się z zasadami zaświadczeń w formie papierowej. Formę elektroniczną dostajesz na maila zaraz po przerobieniu kursu, więcej w zakładce CERTYFIKATY
             </p>
             <button class="button button--certs">
-                Poczytaj więcej o nas
+                <a class="button--link" href="https://kursy.edukacenter.pl/moje-postepy/">
+                    Poczytaj więcej o nas
+                </a>
             </button>
         </div>
     </section>
@@ -70,7 +74,9 @@ get_header();
         <?php echo do_shortcode('[fbrev page_name="Skylo.pl - Agencja Interaktywna" page_id="107515137810946" page_access_token="EAAVVPjFKgSEBADqty1lneo0dt4bbfZA8q8iSNkv6KhmxJJXqUDZBSMNMtYt6I9J3lsb0HLFYhNZBHTPbXZAxrlj4CvQiwEc34V33CxFn15xr1lACYIOfOYWND6EZBbwtkeFcjr5job0TWtjqjqzg25ZAVnE3ymZCvPKU2Pr5p12rftMJghBo6rD" pagination="7" text_size="120" hide_based_on=true centered=true dark_theme=true lazy_load_img=true show_success_api=true open_link=true nofollow_link=true api_ratings_limit="500"]'); ?>
 
         <button class="button--testimonials">
-            Zobacz wszystkie opinie
+            <a class="button--link" href="https://www.facebook.com/szkoleniaeduka/reviews/?ref=page_internal">
+                Zobacz wszystkie opinie
+            </a>
         </button>
     </section>
 

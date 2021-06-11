@@ -25,32 +25,44 @@
 <div class="container-fluid">
     <div class="content">
         <header class="header">
-            <img class="header__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="edukacenter-logo" />
+            <a href="<?php echo home_url(); ?>">
+                <img class="header__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="edukacenter-logo" />
+            </a>
 
             <menu class="header__menu">
                 <ul class="header__menu__list">
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="#">
+                        <a class="header__menu__link" href="<?php echo home_url(); ?>">
                             Strona główna
                         </a>
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="#">
+                        <a class="header__menu__link" href="https://kursy.edukacenter.pl/">
                             Wybierz kurs
                         </a>
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="#">
+                        <a class="header__menu__link" href="https://kursy.edukacenter.pl/moje-postepy/">
                             Certyfikaty
                         </a>
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="https://facebook.com">
+                        <a class="header__menu__link" href="http://skylo-test3.pl/blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="https://kursy.edukacenter.pl/wp-login.php">
+                            Zaloguj się
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="https://www.facebook.com/szkoleniaeduka" target="_blank">
                             <img class="header__menu__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/facebook.svg'; ?>" alt="facebook" />
                         </a>
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="https://instagram.com">
+                        <a class="header__menu__link" href="https://www.instagram.com/edukacenter_pl/" target="_blank">
                             <img class="header__menu__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/instagram.svg'; ?>" alt="instagram" />
                         </a>
                     </li>
@@ -69,16 +81,38 @@
                 <img class="mobileMenu__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="edukacenter" />
 
                 <ul class="mobileMenu__list">
-                    <li class="mobileMenu__list__item">Strona główna</li>
-                    <li class="mobileMenu__list__item">Wybierz kurs</li>
-                    <li class="mobileMenu__list__item">Certyfikaty</li>
+                    <li class="mobileMenu__list__item">
+                        <a href="<?php echo home_url(); ?>">
+                            Strona główna
+                        </a>
+                    </li>
+                    <li class="mobileMenu__list__item">
+                        <a href="https://kursy.edukacenter.pl/">
+                            Wybierz kurs
+                        </a>
+                    </li>
+                    <li class="mobileMenu__list__item">
+                        <a href="https://kursy.edukacenter.pl/">
+                            Certyfikaty
+                        </a>
+                    </li>
+                    <li class="mobileMenu__list__item">
+                        <a href="http://skylo-test3.pl/blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="mobileMenu__list__item">
+                        <a href="https://kursy.edukacenter.pl/wp-login.php">
+                            Zaloguj się
+                        </a>
+                    </li>
                 </ul>
 
                 <div class="mobileMenu__socialMedia">
-                    <a href="https://facebook.com">
+                    <a href="https://www.facebook.com/szkoleniaeduka" target="_blank">
                         <img class="mobileMenu__socialMedia__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/facebook.svg'; ?>" alt="facebook" />
                     </a>
-                    <a href="https://instagram.com">
+                    <a href="https://www.instagram.com/edukacenter_pl/" target="_blank">
                         <img class="mobileMenu__socialMedia__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/instagram.svg'; ?>" alt="instagram" />
                     </a>
                 </div>

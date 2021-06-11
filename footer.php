@@ -1,18 +1,3 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package edukacenter
- */
-
-?>
-
-
-
 </div><!-- .content -->
 <footer class="footer">
     <div class="footer__col">
@@ -21,16 +6,24 @@
         </h3>
         <ul class="footer__list">
             <li class="footer__list__item">
-                Kursy
+                <a href="https://kursy.edukacenter.pl/">
+                    Kursy
+                </a>
             </li>
             <li class="footer__list__item">
-                Certyfikaty
+                <a href="https://kursy.edukacenter.pl/">
+                    Certyfikaty
+                </a>
             </li>
             <li class="footer__list__item">
-                Blog
+                <a href="http://skylo-test3.pl/blog">
+                    Blog
+                </a>
             </li>
             <li class="footer__list__item">
-                Pomoc
+                <a href="http://skylo-test3.pl/o-nas">
+                    O nas
+                </a>
             </li>
         </ul>
 
@@ -72,13 +65,19 @@
         </h3>
         <ul class="footer__list">
             <li class="footer__list__item">
-                Kurs pierwszy
+                <a href="https://kursy.edukacenter.pl/szkolenia/zycie-roslin/">
+                    Życie roślin
+                </a>
             </li>
             <li class="footer__list__item">
-                Kurs drugi
+                <a href="https://kursy.edukacenter.pl/szkolenia/karty-do-czytania-sylabowego/">
+                    Karty do czytania sylabowego
+                </a>
             </li>
             <li class="footer__list__item">
-                Kurs trzeci
+                <a href="https://kursy.edukacenter.pl/szkolenia/dawniej-i-dzis/">
+                    Dawniej i dziś
+                </a>
             </li>
         </ul>
     </div>
@@ -88,11 +87,11 @@
             Śledź nas w mediach społecznościowcyh
         </h3>
         <div class="footer__socialMedia">
-            <a class="footer__socialMedia__link" href="https://facebook.com">
+            <a class="footer__socialMedia__link" href="https://www.facebook.com/szkoleniaeduka" target="_blank">
                 <img class="footer__socialMedia__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/facebook.svg'; ?>" alt="facebook" />
             </a>
-            <a class="footer__socialMedia__link" href="https://instagram.com">
-                <img class="footer__socialMedia__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/instagram.svg'; ?>" alt="facebook" />
+            <a class="footer__socialMedia__link" href="https://www.instagram.com/edukacenter_pl/" target="_blank">
+                <img class="footer__socialMedia__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/instagram.svg'; ?>" alt="instagram" />
             </a>
         </div>
 

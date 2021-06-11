@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d52930-4f08-4e54-b1c4-0468758202d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/o-nas-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/o-nas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-o-nas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-pytania-i-odpowiedzi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,13 +45,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\edukacenter\img" />
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\edukacenter" />
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\edukacenter\edukacenter\img" />
     </key>
@@ -56,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1622160069066</updated>
       <workItem from="1622160071308" duration="3285000" />
-      <workItem from="1622193548261" duration="990000" />
+      <workItem from="1622193548261" duration="1586000" />
+      <workItem from="1623363008222" duration="7358000" />
     </task>
     <servers />
   </component>
