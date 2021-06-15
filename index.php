@@ -12,7 +12,7 @@ get_header();
                 Edukacja dzieci 1-6 lat dla rodziców, opiekunów i nauczycieli
             </h2>
             <button class="button button--cta button--desktop">
-                <a class="button--link" href="https://kursy.edukacenter.pl/">
+                <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Wybierz kurs')->ID); ?>">
                     Zobacz kursy i materiały
                 </a>
             </button>
@@ -33,7 +33,7 @@ get_header();
         <p class="newsletter__text">
             Otrzymuj na bieżąco informacje o nowościach, rabatach oraz informacje o bezpłatnych materiałach.
         </p>
-        <button class="button button--newsletter">
+        <button class="button button--newsletter popmake-122">
             Chcę się zapisać!
         </button>
     </section>
@@ -56,7 +56,7 @@ get_header();
                 *zapoznaj się z zasadami zaświadczeń w formie papierowej. Formę elektroniczną dostajesz na maila zaraz po przerobieniu kursu, więcej w zakładce CERTYFIKATY
             </p>
             <button class="button button--certs">
-                <a class="button--link" href="https://kursy.edukacenter.pl/moje-postepy/">
+                <a class="button--link" href="<?php echo get_page_link(get_page_by_title('O nas')->ID); ?>">
                     Poczytaj więcej o nas
                 </a>
             </button>

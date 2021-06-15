@@ -21,7 +21,7 @@ get_header();
                     Kursy nadające uprawnienia zawodowe typu Opiekun w Żłobku, Opiekun Dzienny, Instruktor tańca dziecięcego, posiadające ważne legalne uprawnienia.
                 </p>
                 <button class="button--testimonials button--chooseCourse">
-                    <a class="button--link" href="https://www.facebook.com/szkoleniaeduka/reviews/?ref=page_internal">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Kursy kwalifikacyjne')->ID); ?>">
                         Więcej informacji
                     </a>
                 </button>
@@ -42,7 +42,7 @@ get_header();
                     Kursy on-line i pakiety PDF dla rodziców, nauczycieli, opiekunów i innych zainteresowanych.
                 </p>
                 <button class="button--testimonials button--chooseCourse">
-                    <a class="button--link" href="https://www.facebook.com/szkoleniaeduka/reviews/?ref=page_internal">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Kursy online')->ID); ?>">
                         Więcej informacji
                     </a>
                 </button>
@@ -63,7 +63,7 @@ get_header();
                     Plakaty tematyczne na każdą okazję, do samodzielnego wydruku. Dostępne formaty A4, A3, A2.
                 </p>
                 <button class="button--testimonials button--chooseCourse">
-                    <a class="button--link" href="https://www.facebook.com/szkoleniaeduka/reviews/?ref=page_internal">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Plakaty')->ID); ?>">
                         Więcej informacji
                     </a>
                 </button>
@@ -84,7 +84,7 @@ get_header();
                     Do wyboru wartościowe e-booki nawet już od 5 zł
                 </p>
                 <button class="button--testimonials button--chooseCourse">
-                    <a class="button--link" href="https://www.facebook.com/szkoleniaeduka/reviews/?ref=page_internal">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('E-booki')->ID); ?>">
                         Więcej informacji
                     </a>
                 </button>
@@ -105,7 +105,7 @@ get_header();
                     Pomoce do pracy i zabawy z dziećmi w wieku 2-6 lat w pdf do wydrukowania w domu już od 5 zł
                 </p>
                 <button class="button--testimonials button--chooseCourse">
-                    <a class="button--link" href="https://www.facebook.com/szkoleniaeduka/reviews/?ref=page_internal">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Pomoce do pracy z dziećmi')->ID); ?>">
                         Więcej informacji
                     </a>
                 </button>

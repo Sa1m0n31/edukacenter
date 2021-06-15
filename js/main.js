@@ -43,3 +43,9 @@ const faqToggle = (sec, n) => {
         questionToToggle.style.paddingTop = "0";
     }
 }
+
+/* Add placeholder for newsletter input */
+const newsletterInput = document.querySelectorAll(".tnp-email");
+newsletterInput.forEach(item => {
+    item.placeholder = "Tu wpisz swój e-mail";
+})

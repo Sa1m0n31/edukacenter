@@ -51,14 +51,11 @@
             Zapisz się do naszego newslettera
         </h3>
 
-        <form class="footer__form">
-            <label class="footer__label">
-                <input class="footer__input" placeholder="Adres email" />
-            </label>
-            <button class="button--footer">
-                Zapisuję się
-            </button>
-        </form>
+        <div class="footer__form">
+            <?php
+                echo do_shortcode('[newsletter_form]');
+            ?>
+        </div>
 
         <h3 class="footer__header marginTop">
             Polecane kursy

@@ -422,7 +422,7 @@ ul {
 	text-align: right;
 }
 
-.footer__form {
+.footer .tnp form {
 	width: 400px;
 	height: 50px;
 	border: 3px solid #586CFF;
@@ -431,11 +431,40 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 20px;
+	padding: 0 7px 0 20px;
 }
 
-.footer__input {
-	color: #000;
+.footer .tnp-email {
+	border-bottom: none !important;
+}
+
+.footer .tnp-field-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 !important;
+	padding: 0 10px 0 20px !important;
+	height: 80% !important;
+}
+
+.footer .tnp-field-email {
+	margin-bottom: 0 !important;
+}
+
+.footer .tnp-email {
+	text-align: left !important;
+}
+
+.footer .tnp-submit {
+	height: 100% !important;
+	margin: 0 !important;
+	background: #475aed !important;
+	font-size: 14px !important;
+	padding: 0 15px !important;
+}
+
+.footer .tnp-submit:hover {
+	background: #3548dd;
 }
 
 .button--footer {
@@ -722,8 +751,8 @@ ul {
 }
 
 .chooseCourse__img {
-	width: 200px;
-	height: auto;
+	width: auto;
+	height: 200px;
 }
 
 .chooseCourse__item:not(:first-of-type) .chooseCourse__img {
@@ -745,4 +774,131 @@ ul {
 
 .button--chooseCourse {
 	height: 50px;
+}
+
+/* Courses */
+.chooseCourse__item--singleCourse {
+	background: #fff;
+	box-shadow: 0px 0px 5px #15172626;
+}
+
+.chooseCourse__item--singleCourse * {
+	color: #000000 !important;
+}
+
+.chooseCourse__itemWrapper--singleCourse::after,
+.chooseCourse__itemWrapper--singleCourse::before {
+	display: none;
+}
+
+.chooseCourse__item--singleCourse .button--chooseCourse {
+	width: 100%;
+}
+
+.chooseCourse__item--singleCourse .button--chooseCourse a {
+	color: #fff !important;
+}
+
+.chooseCourse__itemWrapper--singleCourse {
+	background: transparent !important;
+	box-shadow: none;
+}
+
+.chooseCourse__itemWrapper--singleCourse .chooseCourse__content {
+	flex-basis: 100%;
+}
+
+/* Newsletter popup */
+.pum-overlay {
+	background: rgba(0, 0, 0, .5) !important;
+}
+
+.pum-close {
+	background: transparent !important;
+	box-shadow: none !important;
+	color: #000 !important;
+	font-size: 32px !important;
+	padding: 15px !important;
+}
+
+.pum-container {
+	border-radius: 10px !important;
+	margin: 0 !important;
+	left: 50% !important;
+	top: 50% !important;
+	transform: translate(-50%, -50%) !important;
+	-webkit-box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.95) !important;
+	box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.95) !important;
+	padding: 100px 30px !important;
+	max-width: 800px !important;
+}
+
+.tnp-field {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.tnp-field label {
+	display: none !important;
+}
+
+.tnp-email {
+	text-align: center !important;
+	border-bottom: 2px solid #151726 !important;
+	background: transparent !important;
+}
+
+.pum-title {
+	margin: 20px auto 40px !important;
+	text-align: center !important;
+	font-size: 24px !important;
+	font-weight: 700 !important;
+}
+
+.tnp-submit {
+	width: 100% !important;
+	height: 60px !important;
+	border-radius: 40px !important;
+	background: #151726 !important;
+	color: #fff !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 20px !important;
+	cursor: pointer;
+	transition: .2s all ease-in-out;
+}
+
+.tnp-submit:hover {
+	background: #030515 !important;
+}
+
+.pum-content h3 {
+	text-align: center;
+	margin: 20px 0 30px;
+}
+
+/* Newsletter confirm page */
+.newsletterConfirm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 80px 0;
+}
+
+.newsletterConfirm__btn {
+	background: #151726;
+	width: 300px;
+	height: 60px;
+	border-radius: 60px;
+	color: #fff !important;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: .2s all;
+	margin-top: 40px;
+}
+
+.newsletterConfirm__btn:hover {
+	background: #030515;
 }
