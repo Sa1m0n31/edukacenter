@@ -196,6 +196,15 @@
     .aboutUs__content {
         width: 100%;
     }
+
+    .chooseCourse__header {
+        font-size: 17px;
+    }
+
+    .chooseCourse__text {
+        font-size: 14px;
+        margin: 10px 0 20px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -322,6 +331,50 @@
 
     .singleMain p {
         font-size: 14px;
+    }
+
+    .faq__question {
+        font-size: 17px;
+        text-align: left;
+        padding-right: 20px;
+    }
+
+    .faq__text {
+        font-size: 14px;
+    }
+
+    .chooseCourse__itemWrapper {
+        margin: 300px 0;
+    }
+
+    .chooseCourse__item {
+        flex-direction: column;
+    }
+
+    .chooseCourse__imgWrapper {
+        margin: 0;
+    }
+
+    .chooseCourse__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .chooseCourse__header, .chooseCourse__text {
+        text-align: center;
+    }
+
+    .button--chooseCourse {
+        width: 250px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .chooseCourse__itemWrapper:first-of-type {
+        margin-top: 180px;
     }
 }
 

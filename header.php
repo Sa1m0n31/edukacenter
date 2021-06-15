@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="https://kursy.edukacenter.pl/">
+                        <a class="header__menu__link" href="https://skylo-test3.pl/wybierz-kurs/">
                             Wybierz kurs
                         </a>
                     </li>
@@ -87,7 +87,7 @@
                         </a>
                     </li>
                     <li class="mobileMenu__list__item">
-                        <a href="https://kursy.edukacenter.pl/">
+                        <a href="https://skylo-test3.pl/wybierz-kurs/">
                             Wybierz kurs
                         </a>
                     </li>
