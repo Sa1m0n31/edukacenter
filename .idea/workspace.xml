@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d52930-4f08-4e54-b1c4-0468758202d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/kurs-instruktora-tanca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/kurs-opiekuna-dziennego.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page-e-booki.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page-kursy-kwalifikacyjne.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page-kursy-online.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page-newsletter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page-plakaty.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page-pomoce-do-pracy-z-dziecmi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-strefa-niskich-cen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-wybierz-kurs.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-wybierz-kurs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +63,8 @@
       <workItem from="1623700053675" duration="3562000" />
       <workItem from="1623711131927" duration="5296000" />
       <workItem from="1623751661984" duration="59000" />
-      <workItem from="1623763969055" duration="11157000" />
+      <workItem from="1623763969055" duration="11639000" />
+      <workItem from="1623844581816" duration="4408000" />
     </task>
     <servers />
   </component>

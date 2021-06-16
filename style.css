@@ -902,3 +902,125 @@ ul {
 .newsletterConfirm__btn:hover {
 	background: #030515;
 }
+
+/* Low prices zone */
+.edukacenterPage--lowPrices {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lowPrices {
+	box-shadow: 0 0 5px #15172626;
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px 30px;
+	width: 80%;
+}
+
+.lowPrices:first-of-type {
+	margin-bottom: 140px;
+}
+
+.lowPrices:last-of-type {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.lowPrices__header {
+	margin-bottom: 20px;
+}
+
+.lowPrices p {
+	margin-bottom: 10px;
+}
+
+.lowPrices__bigHeader {
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.lowPrices__bigHeader::before {
+	position: absolute;
+	content: "";
+	top: -70px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 1px;
+	background: #CBCBCB;
+}
+
+.lowPrices form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+}
+
+.lowPrices__input {
+	border: 3px solid #586CFF;
+	padding: 5px 10px;
+	margin: 5px 0;
+	width: 350px;
+	height: 50px;
+}
+
+.lowPrices__btn {
+	background: #586CFF;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 15px 0;
+	width: 350px;
+	height: 50px;
+	color: #fff;
+	transition: .2s all ease-in-out;
+	cursor: pointer;
+}
+
+.lowPrices__btn:hover {
+	background: #475aed;
+}
+
+.lowPrices input[type=checkbox] {
+	margin: 0;
+}
+
+.checkboxLabel {
+	margin-top: 10px;
+	width: 350px;
+	display: flex;
+	align-items: flex-start;
+	font-size: 12px;
+	text-align: justify;
+}
+
+.wpcf7-list-item {
+	margin-left: 0 !important;
+}
+
+.wpcf7-form > p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wpcf7-not-valid-tip {
+	text-align: center;
+	font-size: 12px;
+}
+
+.wpcf7-response-output {
+	border-radius: 8px;
+	padding: 15px !important;
+	font-size: 14px;
+	text-align: center;
+	border-color: #475aed !important;
+}

@@ -140,10 +140,10 @@ add_action( 'widgets_init', 'edukacenter_widgets_init' );
  * Enqueue scripts and styles.
  */
 function edukacenter_scripts() {
-	wp_enqueue_style( 'edukacenter-style', get_stylesheet_uri() . '?n=1', array(), _S_VERSION );
-	wp_enqueue_style('edukacenter-mobile', get_template_directory_uri() . '/mobile.css?n=1', array(), 1.0);
+	wp_enqueue_style( 'edukacenter-style', get_stylesheet_uri() . '?n=2', array(), _S_VERSION );
+	wp_enqueue_style('edukacenter-mobile', get_template_directory_uri() . '/mobile.css?n=2', array(), 1.0);
 
-	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), 1.0, true);
+	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js?n=1', array(), 1.0, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

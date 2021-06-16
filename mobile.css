@@ -376,6 +376,18 @@
     .chooseCourse__itemWrapper:first-of-type {
         margin-top: 180px;
     }
+
+    .lowPrices, .lowPrices__bigHeader::before {
+        width: 100%;
+    }
+
+    .edukacenterPage__header {
+        margin: 0 0 40px 0;
+    }
+
+    .tnp-subscription form {
+        width: 100% !important;
+    }
 }
 
 @media(max-width: 576px) {
@@ -400,5 +412,13 @@
 
     .blog__content {
         grid-template-columns: 1fr;
+    }
+
+    .lowPrices__input, .checkboxLabel, .lowPrices__btn {
+        width: 270px;
+    }
+
+    .lowPrices p {
+        font-size: 14px;
     }
 }

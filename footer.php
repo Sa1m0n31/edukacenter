@@ -6,13 +6,13 @@
         </h3>
         <ul class="footer__list">
             <li class="footer__list__item">
-                <a href="https://kursy.edukacenter.pl/">
+                <a href="<?php echo get_page_link(get_page_by_title('Wybierz kurs')->ID); ?>">
                     Kursy
                 </a>
             </li>
             <li class="footer__list__item">
-                <a href="https://kursy.edukacenter.pl/">
-                    Certyfikaty
+                <a href="<?php echo get_page_link(get_page_by_title('Strefa niskich cen')->ID); ?>">
+                    Strefa niskich cen
                 </a>
             </li>
             <li class="footer__list__item">
