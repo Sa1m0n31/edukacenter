@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d52930-4f08-4e54-b1c4-0468758202d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/page-strefa-niskich-cen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single-course.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -64,7 +65,9 @@
       <workItem from="1623711131927" duration="5296000" />
       <workItem from="1623751661984" duration="59000" />
       <workItem from="1623763969055" duration="11639000" />
-      <workItem from="1623844581816" duration="4408000" />
+      <workItem from="1623844581816" duration="5714000" />
+      <workItem from="1623883931921" duration="180000" />
+      <workItem from="1623924777932" duration="7278000" />
     </task>
     <servers />
   </component>

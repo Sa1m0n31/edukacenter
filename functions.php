@@ -140,8 +140,8 @@ add_action( 'widgets_init', 'edukacenter_widgets_init' );
  * Enqueue scripts and styles.
  */
 function edukacenter_scripts() {
-	wp_enqueue_style( 'edukacenter-style', get_stylesheet_uri() . '?n=2', array(), _S_VERSION );
-	wp_enqueue_style('edukacenter-mobile', get_template_directory_uri() . '/mobile.css?n=2', array(), 1.0);
+	wp_enqueue_style( 'edukacenter-style', get_stylesheet_uri() . '?n=3', array(), _S_VERSION );
+	wp_enqueue_style('edukacenter-mobile', get_template_directory_uri() . '/mobile.css?n=3', array(), 1.0);
 
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js?n=1', array(), 1.0, true);
 
@@ -178,7 +178,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-// Add Product post type
+// Add product post type
 function edukacenter_add_product_post_type() {
     $supports = array(
         'title'
@@ -203,3 +203,29 @@ function edukacenter_add_product_post_type() {
 }
 
 add_action("init", "edukacenter_add_product_post_type");
+
+// Add courase post type
+function edukacenter_add_course_post_type() {
+    $supports = array(
+        'title'
+    );
+
+    $labels = array(
+        'name' => 'Kursy'
+    );
+
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'rewrite'              => array( 'slug' => '' ),
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'menu_icon'            => 'dashicons-welcome-write-blog'
+    );
+
+    register_post_type("course", $args);
+}
+
+add_action("init", "edukacenter_add_course_post_type");

@@ -205,6 +205,14 @@
         font-size: 14px;
         margin: 10px 0 20px;
     }
+
+    .course__section, .course__section--frame {
+        width: 100%;
+    }
+
+    .course__section ol {
+        margin-left: 25px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -388,6 +396,42 @@
     .tnp-subscription form {
         width: 100% !important;
     }
+
+    .course__section {
+        flex-direction: column;
+    }
+
+    .course__section__side img {
+        margin: 30px auto;
+    }
+
+    .course__section__side:first-of-type {
+        margin-right: 0;
+    }
+
+    .course__section:nth-of-type(3) .course__section__side:first-of-type {
+        order: 2;
+    }
+
+    .course__section:nth-of-type(3) .course__section__side:last-of-type {
+        order: 1;
+    }
+
+    .course__section__header, .course__section__side__header, .course__section__header--noMargin {
+        font-size: 24px;
+    }
+
+    .course__section__bigHeader {
+        font-size: 28px;
+    }
+
+    .course__prices__content {
+        margin-right: 30px;
+    }
+
+    .course__prices__btn {
+        width: 230px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -420,5 +464,45 @@
 
     .lowPrices p {
         font-size: 14px;
+    }
+
+    .course__prices {
+        flex-direction: column;
+    }
+
+    .course__prices__content {
+        margin-right: 0;
+    }
+
+    .course__prices__btn {
+        margin-top: 25px;
+    }
+
+    .course__price__beforePromotion {
+        font-size: 17px;
+    }
+
+    .course__price__afterPromotion {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .course__section__bigHeader {
+        font-size: 24px;
+    }
+
+    .course__section--frame {
+        margin: 30px 0;
+    }
+
+    .course__section {
+        margin: 30px auto;
+    }
+
+    .course__section p,
+    .course__section--frame p,
+    .course__section ol li, .course__section ul li
+    {
+        font-size: 14px !important;
     }
 }

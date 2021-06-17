@@ -1024,3 +1024,148 @@ ul {
 	text-align: center;
 	border-color: #475aed !important;
 }
+
+/* Single course */
+.course__title {
+	text-align: center;
+	margin: 40px 0;
+	font-size: 36px;
+}
+
+.course__prices {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px auto 100px;
+}
+
+.course__prices__content {
+	margin-right: 80px;
+}
+
+.course__price__beforePromotion {
+	font-size: 24px;
+	font-weight: 400;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.crossed {
+	text-decoration: line-through;
+}
+
+.course__price__afterPromotion {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.course__price__percent {
+	display: block;
+	margin-left: 15px;
+	padding: 5px;
+	color: #fff;
+	border-radius: 3px;
+	background: #475aed;
+	font-size: 12px;
+}
+
+.course__prices__btn {
+	width: 350px;
+	height: 50px;
+	border-radius: 50px;
+	transition: .2s all ease-in-out;
+}
+
+.course__prices__link {
+	font-weight: 700;
+}
+
+.course__prices__btn:hover {
+	background: #030515;
+}
+
+.course__section {
+	width: 80%;
+	max-width: 1600px;
+	margin: 80px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.course__section ul {
+	list-style-type: disc;
+	margin-left: 25px;
+}
+
+.course__section__side__header, .course__section h1, .course__section__header {
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+.course__section__side:first-of-type {
+	margin-right: 80px;
+}
+
+.course__section__header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.course__section--block {
+	display: block;
+}
+
+.course__section p {
+	margin-bottom: 15px;
+}
+
+.course__section--flexColumn {
+	flex-direction: column;
+}
+
+.button--courseOpinion {
+	font-weight: 700;
+	margin-top: 40px;
+}
+
+.course__section__bigHeader {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 25px;
+}
+
+.course__section--frame {
+	box-shadow: 0 0 5px #15172626;
+	background: #fff;
+	border-radius: 10px;
+	padding: 40px;
+	width: 80%;
+	margin: 80px auto;
+}
+
+.course__section--frame p {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.course__disclaimer {
+	border-top: 1px solid #030515;
+	padding-top: 6px;
+	margin-top: 20px;
+}
+
+.course__disclaimer h6 {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.course__section--frame img {
+	width: 80%;
+	height: auto;
+}
+
+.course__section__header--noMargin {
+	text-align: center;
+}

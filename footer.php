@@ -16,8 +16,8 @@
                 </a>
             </li>
             <li class="footer__list__item">
-                <a href="http://skylo-test3.pl/blog">
-                    Blog
+                <a href="<?php echo get_page_link(get_page_by_title('Pytania i odpowiedzi')->ID); ?>">
+                    Pytania i odpowiedzi
                 </a>
             </li>
             <li class="footer__list__item">
