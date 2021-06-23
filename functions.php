@@ -140,8 +140,8 @@ add_action( 'widgets_init', 'edukacenter_widgets_init' );
  * Enqueue scripts and styles.
  */
 function edukacenter_scripts() {
-	wp_enqueue_style( 'edukacenter-style', get_stylesheet_uri() . '?n=3', array(), _S_VERSION );
-	wp_enqueue_style('edukacenter-mobile', get_template_directory_uri() . '/mobile.css?n=3', array(), 1.0);
+	wp_enqueue_style( 'edukacenter-style', get_stylesheet_uri() . '?n=5', array(), _S_VERSION );
+	wp_enqueue_style('edukacenter-mobile', get_template_directory_uri() . '/mobile.css?n=5', array(), 1.0);
 
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js?n=1', array(), 1.0, true);
 

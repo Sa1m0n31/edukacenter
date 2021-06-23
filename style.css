@@ -693,12 +693,11 @@ ul {
 }
 
 .chooseCourse__itemWrapper {
-	height: 180px;
 	background: rgba(219, 219, 219, .5);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 100px 0;
+	margin: 0;
 	position: relative;
 }
 
@@ -733,7 +732,7 @@ ul {
 	justify-content: flex-start;
 	align-items: center;
 	width: clamp(300px, 80vw, 1000px);
-	margin: 50px auto;
+	margin: 20px auto;
 	position: relative;
 	z-index: 2;
 }
@@ -910,12 +909,23 @@ ul {
 	align-items: center;
 }
 
+.lowPrices__img {
+	width: 80%;
+	height: auto;
+	margin: -70px 0 140px;
+}
+
 .lowPrices {
 	box-shadow: 0 0 5px #15172626;
 	background: #fff;
 	border-radius: 10px;
 	padding: 20px 30px;
 	width: 80%;
+}
+
+.lowPrices--formWrapper {
+	width: fit-content;
+	width: -moz-max-content;
 }
 
 .lowPrices:first-of-type {
@@ -1027,20 +1037,15 @@ ul {
 
 /* Single course */
 .course__title {
-	text-align: center;
-	margin: 40px 0;
-	font-size: 36px;
-}
-
-.course__prices {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 40px auto 100px;
+	margin: 0 0 20px;
+	font-size: 36px !important;
 }
 
 .course__prices__content {
-	margin-right: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
 }
 
 .course__price__beforePromotion {
@@ -1052,6 +1057,7 @@ ul {
 }
 
 .crossed {
+	white-space: nowrap;
 	text-decoration: line-through;
 }
 
@@ -1066,18 +1072,21 @@ ul {
 	padding: 5px;
 	color: #fff;
 	border-radius: 3px;
-	background: #475aed;
+	background: #586CFF;
 	font-size: 12px;
 }
 
 .course__prices__btn {
 	width: 350px;
-	height: 50px;
+	height: 75px;
 	border-radius: 50px;
 	transition: .2s all ease-in-out;
+	background: #586CFF;
+	margin-right: 30px;
 }
 
 .course__prices__link {
+	font-size: 20px;
 	font-weight: 700;
 }
 
@@ -1091,7 +1100,12 @@ ul {
 	margin: 80px auto;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
+}
+
+.course__section--first {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #CBCBCB;
 }
 
 .course__section ul {
@@ -1102,6 +1116,10 @@ ul {
 .course__section__side__header, .course__section h1, .course__section__header {
 	margin-bottom: 20px;
 	font-size: 28px;
+}
+
+.course__section__side__header {
+	font-size: 18px;
 }
 
 .course__section__side:first-of-type {
@@ -1121,13 +1139,19 @@ ul {
 	margin-bottom: 15px;
 }
 
+.course__section__img {
+	width: 400px;
+	height: auto;
+}
+
 .course__section--flexColumn {
+	align-items: center;
 	flex-direction: column;
 }
 
 .button--courseOpinion {
 	font-weight: 700;
-	margin-top: 40px;
+	margin: 40px 0 0 !important;
 }
 
 .course__section__bigHeader {
@@ -1168,4 +1192,35 @@ ul {
 
 .course__section__header--noMargin {
 	text-align: center;
+}
+
+.course__section__header--blue
+{
+	background: #586CFF;
+	width: 100%;
+	height: 75px;
+	font-size: 22px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.course__section__side--frame {
+	background: #fff;
+	box-shadow: 0px 0px 5px #15172626;
+	padding: 25px;
+}
+
+.course__section__side--frame ol {
+	margin-left: 30px;
+}
+
+.course__section--frame--dark {
+	background: #151726;
+	border-radius: 10px;
+	color: #fff !important;
+}
+
+.edukacenterPage--helpers .chooseCourse__header {
+	margin-bottom: 30px;
 }

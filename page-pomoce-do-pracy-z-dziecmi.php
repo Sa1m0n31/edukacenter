@@ -2,62 +2,87 @@
 get_header();
 ?>
 
-<main class="edukacenterPage">
+<main class="edukacenterPage edukacenterPage--helpers">
     <h1 class="edukacenterPage__header edukacenterPage__header--chooseCourse">
         Pomoce do pracy z dziećmi
     </h1>
 
-    <?php
-    $args = array(
-        'post_type' => 'product',
-        'posts_per_page' => 500
-    );
+    <section class="chooseCourse__itemWrapper">
+        <div class="chooseCourse__item">
+            <span class="chooseCourse__shadow"></span>
+            <div class="chooseCourse__imgWrapper">
+                <img class="chooseCourse__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/karty-czytanie.jpg'; ?>" alt="kurs" />
+            </div>
+            <div class="chooseCourse__content">
+                <h3 class="chooseCourse__header">
+                    Karty do nauki czytania i pisania
+                </h3>
+                <button class="button--testimonials button--chooseCourse">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Karty do nauki pisania i czytania')->ID); ?>">
+                        Więcej informacji
+                    </a>
+                </button>
+            </div>
+        </div>
+    </section>
 
-    $query = new WP_Query($args);
+    <section class="chooseCourse__itemWrapper">
+        <div class="chooseCourse__item">
+            <span class="chooseCourse__shadow"></span>
+            <div class="chooseCourse__imgWrapper">
+                <img class="chooseCourse__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/karty-montessori.jpg'; ?>" alt="kurs" />
+            </div>
+            <div class="chooseCourse__content">
+                <h3 class="chooseCourse__header">
+                    Karty Inspirowane Metodą Montessori
+                </h3>
+                <button class="button--testimonials button--chooseCourse">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Karty inspirowane metodą Montessori')->ID); ?>">
+                        Więcej informacji
+                    </a>
+                </button>
+            </div>
+        </div>
+    </section>
 
-    if($query->have_posts()) {
-        while($query->have_posts()) {
-            $query->the_post();
-            $cat = get_field('kategoria');
-            if($cat == 'Pomoce do pracy z dziećmi') {
-                ?>
+    <section class="chooseCourse__itemWrapper">
+        <div class="chooseCourse__item">
+            <span class="chooseCourse__shadow"></span>
+            <div class="chooseCourse__imgWrapper">
+                <img class="chooseCourse__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/karty-tematyczne.jpg'; ?>" alt="kurs" />
+            </div>
+            <div class="chooseCourse__content">
+                <h3 class="chooseCourse__header">
+                    Karty tematyczne
+                </h3>
+                <button class="button--testimonials button--chooseCourse">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Karty tematyczne')->ID); ?>">
+                        Więcej informacji
+                    </a>
+                </button>
+            </div>
+        </div>
+    </section>
 
-                <section class="chooseCourse__itemWrapper chooseCourse__itemWrapper--singleCourse">
-                    <div class="chooseCourse__item chooseCourse__item--singleCourse">
-                        <span class="chooseCourse__shadow"></span>
-                        <div class="chooseCourse__imgWrapper">
-                            <img class="chooseCourse__img" src="<?php echo get_field('zdjecie'); ?>" alt="kurs" />
-                        </div>
-                        <div class="chooseCourse__content">
-                            <h3 class="chooseCourse__header">
-                                <?php echo the_title(); ?>
-                            </h3>
-                            <p class="chooseCourse__text">
-                                <?php echo get_field('krotki_opis'); ?>
-                            </p>
-                            <button class="button--testimonials button--chooseCourse">
-                                <a class="button--link" href="
-<?php
-                                if(get_field('link') != '') {
-                                    echo get_field('link');
-                                }
-                                else {
-                                    the_permalink();
-                                }
-                                ?>
-">
-                                    Więcej informacji
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                </section>
+    <section class="chooseCourse__itemWrapper">
+        <div class="chooseCourse__item">
+            <span class="chooseCourse__shadow"></span>
+            <div class="chooseCourse__imgWrapper">
+                <img class="chooseCourse__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/karty-pozostale.jpg'; ?>" alt="kurs" />
+            </div>
+            <div class="chooseCourse__content">
+                <h3 class="chooseCourse__header">
+                    Pozostałe pomoce
+                </h3>
+                <button class="button--testimonials button--chooseCourse">
+                    <a class="button--link" href="<?php echo get_page_link(get_page_by_title('Pozostałe pomoce')->ID); ?>">
+                        Więcej informacji
+                    </a>
+                </button>
+            </div>
+        </div>
+    </section>
 
-                <?php
-            }
-        }
-    }
-    ?>
 </main>
 
 <?php

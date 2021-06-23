@@ -4,7 +4,7 @@ get_header();
 
 <main class="edukacenterPage">
     <h1 class="edukacenterPage__header edukacenterPage__header--chooseCourse">
-        Pomoce do pracy z dziećmi
+        Karty inspirowane metodą Montessori
     </h1>
 
     <?php
@@ -18,8 +18,8 @@ get_header();
     if($query->have_posts()) {
         while($query->have_posts()) {
             $query->the_post();
-            $cat = get_field('kategoria');
-            if($cat == 'Pomoce do pracy z dziećmi') {
+            $cat = get_field('podkategoria');
+            if($cat == 'Karty inspirowane metodą Montessori') {
                 ?>
 
                 <section class="chooseCourse__itemWrapper chooseCourse__itemWrapper--singleCourse">

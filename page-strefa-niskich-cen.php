@@ -22,10 +22,13 @@ get_header();
         </p>
     </section>
 
+    <img class="lowPrices__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/strefa-niskich-cen.jpg'; ?>" alt="strefa-niskich-cen" />
+
+
     <h2 class="lowPrices__bigHeader">
         Zapisy do STREFY NISKICH CEN
     </h2>
-    <section class="lowPrices">
+    <section class="lowPrices lowPrices--formWrapper">
         <?php
             echo do_shortcode('[contact-form-7 id="138" title="Formularz 1"]');
         ?>

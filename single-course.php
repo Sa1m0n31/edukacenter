@@ -3,50 +3,48 @@ get_header();
 ?>
 
 <main class="singleCourse">
-    <h1 class="course__title">
-        <?php echo the_title(); ?>
-    </h1>
-    <section class="course__prices">
-        <section class="course__prices__content">
-            <?php
-                if(get_field('cena_przed_promocja') != '') {
-                    ?>
-                    <h4 class="course__price__beforePromotion">
-                        <span class="crossed">
-                            <?php echo get_field('cena_przed_promocja'); ?>
-                        </span>
-                        <span class="course__price__percent">
-                            -70%
-                        </span>
-                    </h4>
-                    <?php
-                }
-            ?>
-            <h3 class="course__price__afterPromotion">
-                <?php echo get_field('cena_po_promocji'); ?>
-            </h3>
+        <section class="course__section course__section--first">
+            <section class="course__section__side">
+                <img class="course__section__img" src="<?php echo get_field('dla_kogo_-_zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
+            </section>
+            <section class="course__section__side">
+                <h1 class="course__title">
+                    <?php echo the_title(); ?>
+                </h1>
+                <h2 class="course__section__side__header">
+                    Dla kogo jest ten kurs?
+                </h2>
+                <article class="course__section__side__content">
+                    <?php echo get_field('dla_kogo_-_opis'); ?>
+                </article>
+                <section class="course__prices__content">
+                    <button class="button course__prices__btn">
+                        <a class="button--link course__prices__link" href="<?php echo get_field('link'); ?>">
+                            Zapisz się teraz
+                        </a>
+                    </button>
+                    <section class="course__prices__content__prices">
+                        <?php
+                        if(get_field('cena_przed_promocja') != '') {
+                            ?>
+                            <h4 class="course__price__beforePromotion">
+                                <span class="crossed">
+                                    <?php echo get_field('cena_przed_promocja'); ?>
+                                </span>
+                                        <span class="course__price__percent">
+                                    -70%
+                                </span>
+                            </h4>
+                            <?php
+                        }
+                        ?>
+                        <h3 class="course__price__afterPromotion">
+                            <?php echo get_field('cena_po_promocji'); ?>
+                        </h3>
+                    </section>
+                </section>
+            </section>
         </section>
-
-        <button class="button course__prices__btn">
-            <a class="button--link course__prices__link" href="<?php echo get_field('link'); ?>">
-                Zapisz się teraz
-            </a>
-        </button>
-    </section>
-
-    <section class="course__section">
-        <section class="course__section__side">
-            <h2 class="course__section__side__header">
-                Dla kogo jest ten kurs?
-            </h2>
-            <article class="course__section__side__content">
-                <?php echo get_field('dla_kogo_-_opis'); ?>
-            </article>
-        </section>
-        <section class="course__section__side">
-            <img class="course__section__img" src="<?php echo get_field('dla_kogo_-_zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
-        </section>
-    </section>
 
     <section class="course__section">
         <section class="course__section__side">
@@ -63,32 +61,35 @@ get_header();
     </section>
 
     <section class="course__section course__section--block">
-        <h2 class="course__section__header">
+        <h2 class="course__section__header course__section__header--blue">
             Historia powstania kursu
         </h2>
-        <section class="course__section__content">
+        <section class="course__section__content course__section__side--frame">
             <?php echo get_field('historia_powstania_kursu'); ?>
         </section>
     </section>
 
     <section class="course__section course__section--block">
-        <section class="course__section__content">
+        <h2 class="course__section__header course__section__header--blue">
+            O autorce kursu
+        </h2>
+        <section class="course__section__content course__author course__section__side--frame">
             <?php echo get_field('o_autorze_kursu'); ?>
         </section>
     </section>
 
     <section class="course__section course__section--block">
-        <h2 class="course__section__header">
+        <h2 class="course__section__header course__section__header--blue">
             O kursie metodą online
         </h2>
-        <section class="course__section__content">
+        <section class="course__section__content course__section__side--frame">
             <?php echo get_field('o_kursie_metoda_online'); ?>
         </section>
     </section>
 
     <section class="course__section">
         <section class="course__section__side">
-            <img class="course__section__img" src="<?php echo get_field('co_w_nim_znajdziesz_-_zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
+            <img class="course__section__img--smaller" src="<?php echo get_field('co_w_nim_znajdziesz_-_zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
         </section>
         <section class="course__section__side">
             <h2 class="course__section__side__header">
@@ -104,17 +105,14 @@ get_header();
         <h2 class="course__section__header">
             Tematyka na kursie
         </h2>
-        <section class="course__section__content">
+        <section class="course__section__content course__section__side--frame">
             <?php echo get_field('tematyka_na_kursie'); ?>
         </section>
     </section>
 
     <section class="course__section course__section--flexColumn">
         <h2 class="course__section__header--noMargin">
-            Stuprocentowa satysfakcja gwarantowana!
-        </h2>
-        <h2 class="course__section__header--noMargin">
-            Sprawdź opinie naszych klientów
+            ZOBACZ WIĘCEJ OPINII NA FACEBOOKU
         </h2>
         <button class="button button--courseOpinion course__prices__btn">
             <a class="button--link" href="https://www.facebook.com/szkoleniaeduka/reviews/?ref=page_internal">
@@ -123,16 +121,13 @@ get_header();
         </button>
     </section>
 
-    <section class="course__section course__section--flexColumn">
-        <h2 class="course__section__bigHeader">
+    <section class="course__section--frame course__section--frame--dark course__section--flexColumn">
+        <h2 class="course__section__header">
             Przekonaj się jak wielką moc ma nauka przez zabawę- zastosuj ją w codziennym życiu, stosując ćwiczenia i zabawy.
         </h2>
-        <h2 class="course__section__bigHeader">
+        <h2 class="course__section__header">
             Nie wiesz jak? Pokażę Ci!
         </h2>
-    </section>
-    
-    <section class="course__section--frame course__section--flexColumn">
         <p>
             Dostęp do kursu otrzymujesz na okres dożywotni na wygodnej platformie on-line ( wystarczy tylko dostęp do internetu, bez instalowania żadnych wtyczek )!
         </p>
@@ -164,7 +159,7 @@ get_header();
     <?php
         if(get_field('niespodzianka') != '') {
             ?>
-            <section class="course__section--frame course__section--flexColumn">
+            <section class="course__section--frame course__section--frame--dark course__section--flexColumn">
                 <?php echo get_field('niespodzianka'); ?>
             </section>
             <?php

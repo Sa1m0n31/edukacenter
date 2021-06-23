@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d52930-4f08-4e54-b1c4-0468758202d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/single-course.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/karty-czytanie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/karty-montessori.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/karty-pozostale.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/karty-tematyczne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/strefa-niskich-cen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-karty-do-nauki-pisania-i-czytania.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-karty-inspirowane-metoda-montessori.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-karty-tematyczne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-pozostale-pomoce.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-pomoce-do-pracy-z-dziecmi.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-pomoce-do-pracy-z-dziecmi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-strefa-niskich-cen.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-strefa-niskich-cen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-course.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-course.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kalchem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -68,6 +83,9 @@
       <workItem from="1623844581816" duration="5714000" />
       <workItem from="1623883931921" duration="180000" />
       <workItem from="1623924777932" duration="7278000" />
+      <workItem from="1624293140889" duration="57000" />
+      <workItem from="1624407099058" duration="611000" />
+      <workItem from="1624477245569" duration="8788000" />
     </task>
     <servers />
   </component>

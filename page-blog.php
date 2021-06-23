@@ -9,7 +9,8 @@ get_header();
     <div class="blog__content">
        <?php
         $args = array(
-            'post_type' => 'post'
+            'post_type' => 'post',
+            'posts_per_page' => 500
         );
         $query = new WP_Query($args);
 
