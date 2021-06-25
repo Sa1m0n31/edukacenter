@@ -46,60 +46,92 @@ get_header();
             </section>
         </section>
 
-    <section class="course__section">
-        <section class="course__section__side">
-            <img class="course__section__img" src="<?php echo get_field('dlaczego_warto_-_zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
-        </section>
-        <section class="course__section__side">
-            <h2 class="course__section__side__header">
-                Dlaczego warto?
-            </h2>
-            <article class="course__section__side__content">
-                <?php echo get_field('dlaczego_warto_-_opis'); ?>
-            </article>
-        </section>
-    </section>
+    <?php
+        if(get_field('dlaczego_warto_-_zdjecie')) {
+            ?>p
+            <section class="course__section">
+                <section class="course__section__side">
+                    <img class="course__section__img" src="<?php echo get_field('dlaczego_warto_-_zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
+                </section>
+                <section class="course__section__side">
+                    <h2 class="course__section__side__header">
+                        Dlaczego warto?
+                    </h2>
+                    <article class="course__section__side__content">
+                        <?php echo get_field('dlaczego_warto_-_opis'); ?>
+                    </article>
+                </section>
+            </section>
+                <?php
+        }
+    ?>
 
-    <section class="course__section course__section--block">
-        <h2 class="course__section__header course__section__header--blue">
-            Historia powstania kursu
-        </h2>
-        <section class="course__section__content course__section__side--frame">
-            <?php echo get_field('historia_powstania_kursu'); ?>
-        </section>
-    </section>
+    <?php
+        if(get_field('historia_powstania_kursu')) {
+            ?>
+            <section class="course__section course__section--block">
+                <h2 class="course__section__header course__section__header--blue">
+                    Historia powstania kursu
+                </h2>
+                <section class="course__section__content course__section__side--frame">
+                    <?php echo get_field('historia_powstania_kursu'); ?>
+                </section>
+            </section>
+                <?php
+        }
+    ?>
 
-    <section class="course__section course__section--block">
-        <h2 class="course__section__header course__section__header--blue">
-            O autorce kursu
-        </h2>
-        <section class="course__section__content course__author course__section__side--frame">
-            <?php echo get_field('o_autorze_kursu'); ?>
-        </section>
-    </section>
+    <?php
+        if(get_field('o_autorze_kursu')) {
+            ?>
+            <section class="course__section course__section--block">
+                <h2 class="course__section__header course__section__header--blue">
+                    <?php
+                    echo get_field('autor');
+                    ?>
+                </h2>
+                <section class="course__section__content course__author course__section__side--frame">
+                    <?php echo get_field('o_autorze_kursu'); ?>
+                </section>
+            </section>
+                <?php
+        }
+    ?>
 
-    <section class="course__section course__section--block">
-        <h2 class="course__section__header course__section__header--blue">
-            O kursie metodą online
-        </h2>
-        <section class="course__section__content course__section__side--frame">
-            <?php echo get_field('o_kursie_metoda_online'); ?>
-        </section>
-    </section>
+    <?php
+        if(get_field('o_kursie_metoda_online')){
+            ?>
+            <section class="course__section course__section--block">
+                <h2 class="course__section__header course__section__header--blue">
+                    O kursie metodą online
+                </h2>
+                <section class="course__section__content course__section__side--frame">
+                    <?php echo get_field('o_kursie_metoda_online'); ?>
+                </section>
+            </section>
+                <?php
+        }
+    ?>
 
-    <section class="course__section">
-        <section class="course__section__side">
-            <img class="course__section__img--smaller" src="<?php echo get_field('co_w_nim_znajdziesz_-_zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
-        </section>
-        <section class="course__section__side">
-            <h2 class="course__section__side__header">
-                Co w nim znajdziesz?
-            </h2>
-            <article class="course__section__side__content">
-                <?php echo get_field('co_w_nim_znajdziesz_-_opis'); ?>
-            </article>
-        </section>
-    </section>
+    <?php
+        if(get_field('co_w_nim_znajdziesz_-_opis')) {
+            ?>
+            <section class="course__section">
+                <section class="course__section__side">
+                    <img class="course__section__img--smaller" src="<?php echo get_field('co_w_nim_znajdziesz_-_zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
+                </section>
+                <section class="course__section__side">
+                    <h2 class="course__section__side__header">
+                        Co w nim znajdziesz?
+                    </h2>
+                    <article class="course__section__side__content">
+                        <?php echo get_field('co_w_nim_znajdziesz_-_opis'); ?>
+                    </article>
+                </section>
+            </section>
+                <?php
+        }
+    ?>
 
     <section class="course__section course__section--block">
         <h2 class="course__section__header">
@@ -159,7 +191,7 @@ get_header();
     <?php
         if(get_field('niespodzianka') != '') {
             ?>
-            <section class="course__section--frame course__section--frame--dark course__section--flexColumn">
+            <section class="course__section--frame course__section--frame--dark course__section--flexColumn course__section--surprice">
                 <?php echo get_field('niespodzianka'); ?>
             </section>
             <?php

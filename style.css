@@ -36,6 +36,7 @@ input, button, a {
 
 html {
 	overflow-x: hidden;
+	padding-top: 50px;
 }
 
 ul {
@@ -77,10 +78,38 @@ ul {
 	font-weight: 700;
 }
 
+/* Top bar */
+.topBar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50px;
+	background: #151726;
+	width: 100%;
+	padding: 0 clamp(10px, 8%, calc((100vw - 1600px) / 2));
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.topBar__header, .topBar__right {
+	color: #fff;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.topBar__img {
+	width: 20px;
+	height: auto;
+	margin-right: 20px;
+}
+
 /* Header */
 .header {
 	position: sticky;
-	top: 0;
+	top: 50px;
 	left: 0;
 	display: flex;
 	justify-content: space-between;
@@ -135,7 +164,7 @@ ul {
 
 /* Landing page */
 .landing {
-	margin-top: 60px;
+	margin-top: 50px;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -750,6 +779,7 @@ ul {
 }
 
 .chooseCourse__img {
+	min-width: 100%;
 	width: auto;
 	height: 200px;
 }
@@ -1135,13 +1165,17 @@ ul {
 	display: block;
 }
 
+.course__section--block ul {
+	margin-left: 40px !important;
+}
+
 .course__section p {
 	margin-bottom: 15px;
 }
 
 .course__section__img {
-	width: 400px;
-	height: auto;
+	/*width: 400px;*/
+	/*height: auto;*/
 }
 
 .course__section--flexColumn {
@@ -1158,6 +1192,11 @@ ul {
 	text-align: center;
 	font-size: 40px;
 	margin-bottom: 25px;
+}
+
+.course__section--surprice .elementor-testimonial-details {
+	text-align: center !important;
+	margin: 20px auto !important;
 }
 
 .course__section--frame {
@@ -1186,8 +1225,7 @@ ul {
 }
 
 .course__section--frame img {
-	width: 80%;
-	height: auto;
+	max-width: 80%;
 }
 
 .course__section__header--noMargin {

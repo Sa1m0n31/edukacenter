@@ -19,7 +19,7 @@ get_header();
         while($query->have_posts()) {
             $query->the_post();
             $cat = get_field('podkategoria');
-            if($cat == 'Pozostałe pomoce') {
+            if($cat == 'Pozostałe') {
                 ?>
 
                 <section class="chooseCourse__itemWrapper chooseCourse__itemWrapper--singleCourse">
@@ -36,16 +36,7 @@ get_header();
                                 <?php echo get_field('krotki_opis'); ?>
                             </p>
                             <button class="button--testimonials button--chooseCourse">
-                                <a class="button--link" href="
-<?php
-                                if(get_field('link') != '') {
-                                    echo get_field('link');
-                                }
-                                else {
-                                    the_permalink();
-                                }
-                                ?>
-">
+                                <a class="button--link" href="<?php echo get_field('link'); ?>">
                                     Więcej informacji
                                 </a>
                             </button>

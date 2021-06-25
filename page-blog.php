@@ -10,7 +10,9 @@ get_header();
        <?php
         $args = array(
             'post_type' => 'post',
-            'posts_per_page' => 500
+            'posts_per_page' => 500,
+            'orderby' => 'date',
+            'order'   => 'ASC'
         );
         $query = new WP_Query($args);
 

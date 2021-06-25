@@ -9,7 +9,7 @@ get_header();
 
     <?php
     $args = array(
-        'post_type' => 'product',
+        'post_type' => 'course',
         'posts_per_page' => 500
     );
 
@@ -18,15 +18,13 @@ get_header();
     if($query->have_posts()) {
         while($query->have_posts()) {
             $query->the_post();
-            $cat = get_field('kategoria');
-            if($cat == 'Kursy online') {
                 ?>
 
                 <section class="chooseCourse__itemWrapper chooseCourse__itemWrapper--singleCourse">
                     <div class="chooseCourse__item chooseCourse__item--singleCourse">
                         <span class="chooseCourse__shadow"></span>
                         <div class="chooseCourse__imgWrapper">
-                            <img class="chooseCourse__img" src="<?php echo get_field('zdjecie'); ?>" alt="kurs" />
+                            <img class="chooseCourse__img" src="<?php echo get_field('dla_kogo_-_zdjecie'); ?>" alt="kurs" />
                         </div>
                         <div class="chooseCourse__content">
                             <h3 class="chooseCourse__header">
@@ -36,16 +34,7 @@ get_header();
                                 <?php echo get_field('krotki_opis'); ?>
                             </p>
                             <button class="button--testimonials button--chooseCourse">
-                                <a class="button--link" href="
-<?php
-                                if(get_field('link') != '') {
-                                    echo get_field('link');
-                                }
-                                else {
-                                    the_permalink();
-                                }
-                                ?>
-">
+                                <a class="button--link" href="<?php echo the_permalink(); ?>">
                                     Więcej informacji
                                 </a>
                             </button>
@@ -54,7 +43,6 @@ get_header();
                 </section>
 
                 <?php
-            }
         }
     }
     ?>

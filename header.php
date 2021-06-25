@@ -24,6 +24,16 @@
 <?php wp_body_open(); ?>
 <div class="container-fluid">
     <div class="content">
+        <aside class="topBar">
+            <h4 class="topBar__header">
+                Edukacenter - platforma edukacyjna dla dzieci 1-6 lat oraz ich rodziców, opiekunów i nauczycieli
+            </h4>
+
+            <a class="topBar__right" href="https://kursy.edukacenter.pl">
+                <img class="topBar__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/user_circle.svg'; ?>" alt="kursy" />
+                Przejdź do panelu z kursami
+            </a>
+        </aside>
         <header class="header">
             <a href="<?php echo home_url(); ?>">
                 <img class="header__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="edukacenter-logo" />
